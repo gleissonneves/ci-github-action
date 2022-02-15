@@ -1,0 +1,16 @@
+name: CI
+on: [push]
+jobs: 
+  eslint:
+    name: Lint code base
+    runs-on: ubunto-latest
+
+    steps: 
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install packges
+        run: npm cli
+
+      - name: Run Eslint
+        run: npm run lint
